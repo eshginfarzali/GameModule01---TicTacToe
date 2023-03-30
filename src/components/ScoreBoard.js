@@ -1,17 +1,17 @@
-import React from 'react'
-import "./ScoreBoard.css"
+import React from "react";
+import "./ScoreBoard.css";
 
-
-
-export const ScoreBoard = ({scores, xPlaying}) => {
-
-const {xScore, oScore}= scores;
-
+export const ScoreBoard = ({ scores, xPlaying }) => {
+  const { xScore, oScore } = scores;
 
   return (
-    <div className='scorboard'>
-    <span className={`score x-score ${!xPlaying && "inactive"}  `}>X - {xScore}</span>
-    <span className={`score o-score ${xPlaying && "inactive"}  `}>O - {oScore}</span>
+    <div className="scorboard">
+      <span className={`score x-score ${!xPlaying && "inactive"}  `}>
+        X - {xScore}
+      </span>
+      <span className={`score o-score ${xPlaying && "inactive"}  `}>
+        O - {oScore}
+      </span>
     </div>
-  )
-}
+  );
+};
